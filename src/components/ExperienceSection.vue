@@ -73,7 +73,7 @@ const jobs = [
   },
   {
     title: 'Frontend Developer (Part-Time)',
-    company: 'Vietnam',
+    company: 'Ho Chi Minh, Vietnam',
     logo: 'SV',
     url: '',
     period: 'September 2020 – February 2022',

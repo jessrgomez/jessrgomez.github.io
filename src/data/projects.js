@@ -152,7 +152,7 @@ export const projects = [
   },
   {
     title: 'Sentravel: Booking System and Ancillary Revenue Portal',
-    company: 'Vietnam',
+    company: 'Ho Chi Minh, Vietnam',
     industries: ['Travel'],
     description: 'Developed booking systems and reporting portals, designing dashboards and data visualizations to improve user experience.',
     tech: ['VueJS', 'Highcharts', 'JavaScript'],
