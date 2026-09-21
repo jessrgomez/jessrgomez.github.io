@@ -10,36 +10,36 @@ import sapphireCityImg from '../assets/projects/sapphire-city.jpg'
 
 export const projects = [
   {
-    title: 'ArenaPlus (v1 & v2)',
+    title: 'AP Core (iGaming Platform: ap-v1 & ap-v2)',
     company: 'DigiPlus Interactive Corp.',
     industries: ['Gaming'],
-    description: 'Delivered frontend enhancements across two major versions of ArenaPlus — including its LaroPlus-branded mobile app for v1 — covering the Loyalty Club, SOBOT customer messaging, and more.',
+    description: 'Delivered frontend enhancements across two major versions of an iGaming platform — including its branded mobile app for v1 — covering the Loyalty Club, customer messaging system, and more.',
     tech: ['VueJS', 'TypeScript', 'JavaScript', 'Pinia', 'Vuex', 'Axios', 'Vant', 'REST APIs', 'Spring Boot', 'MySQL'],
     highlights: [
       'Built the Loyalty Club end-to-end across desktop and mobile, including tier progression, rank-up UI, and refer-a-friend statistics via the Loyalty API',
-      'Delivered SOBOT customer message notification features across web and the LaroPlus (ArenaPlus v1) mobile app',
+      'Delivered customer message notification features across web and the platform\'s v1 mobile app',
       'Brand partnership updates (e.g. NBA) and PAGCOR compliance/betting rules updates on the mobile app',
       'Login and verification code fixes across iOS and Android'
     ]
   },
   {
-    title: 'SABA Lite & Sportsbook (Altenar)',
+    title: 'Sportsbook Integration (iGaming Platform: ap-v2)',
     company: 'DigiPlus Interactive Corp.',
     industries: ['Gaming'],
-    description: "Delivered SABA Lite's Altenar API integration and grew it into ArenaPlus's broader sportsbook experience, covering horse and greyhound racing, live-streamed races, and parlay/singles wagering.",
-    tech: ['VueJS', 'REST APIs', 'Altenar API', 'Git'],
+    description: "Delivered a third-party sportsbook API integration and grew it into the platform's broader sportsbook experience, covering horse and greyhound racing, live-streamed races, and parlay/singles wagering.",
+    tech: ['VueJS', 'REST APIs', 'Third-Party Sportsbook API', 'Git'],
     highlights: [
-      'Altenar API integration connecting the sportsbook frontend to live odds and betting data',
+      'Third-party sportsbook API integration connecting the frontend to live odds and betting data',
       'Horse and greyhound racing API integration with live-streamed race widgets',
       'Parlay and singles wagering flows for sportsbook betting',
       'Cross-functional delivery with product and QA'
     ]
   },
   {
-    title: 'ArenaPlus Community (v2)',
+    title: 'Social/Community Feature (iGaming Platform: ap-community-v2)',
     company: 'DigiPlus Interactive Corp.',
     industries: ['Gaming'],
-    description: 'Contributed to the Community v2 module of ArenaPlus, a social feed feature within the platform supporting posts, hashtags, and follower interactions.',
+    description: 'Contributed to the Community v2 module of the platform, a social feed feature supporting posts, hashtags, and follower interactions.',
     tech: ['VueJS', 'TypeScript', 'Pinia', 'TanStack Query', 'TailwindCSS'],
     highlights: [
       'Built the community post binding and hashtag page for desktop view',
@@ -49,14 +49,14 @@ export const projects = [
     ]
   },
   {
-    title: 'ArenaPlus Retail App',
+    title: 'Retail App (iGaming Platform: ap-retail)',
     company: 'DigiPlus Interactive Corp.',
     industries: ['Gaming'],
-    description: 'Currently building the transaction history and sportsbook betting experience for a new retail-focused version of the ArenaPlus platform, working alongside a small frontend team.',
-    tech: ['VueJS', 'TypeScript', 'Pinia', 'TanStack Query', 'TailwindCSS', 'Altenar API'],
+    description: 'Currently building the transaction history and sportsbook betting experience for a new retail-focused version of the platform, working alongside a small frontend team.',
+    tech: ['VueJS', 'TypeScript', 'Pinia', 'TanStack Query', 'TailwindCSS', 'Third-Party Sportsbook API'],
     highlights: [
       'Building the Transactions module (Casino, Sports, and Promotions history) with status badges, filters, pagination, and detail drawers',
-      'Integrating Altenar sportsbook bet slip widgets with selection-count and login-prompt composables',
+      'Integrating third-party sportsbook bet slip widgets with selection-count and login-prompt composables',
       'Implementing dark/light theme-aware iconography across the transactions UI'
     ]
   },
