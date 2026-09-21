@@ -61,7 +61,7 @@ export const projects = [
     ]
   },
   {
-    title: 'VueJS Client Applications',
+    title: 'VueJS Game Platform',
     company: 'ThinkBIT Solutions',
     industries: ['Enterprise'],
     description: 'Developed and maintained VueJS applications integrated with Laravel/PHP backends, from testing through deployment.',
