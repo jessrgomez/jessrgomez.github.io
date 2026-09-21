@@ -8,11 +8,11 @@ const messagesEl = ref(null)
 const messages = ref([
   {
     role: 'bot',
-    text: "Hi! I'm Jessica's assistant. Ask me about her experience, skills, projects, or how to get in touch."
+    text: "Hi! I'm Jessica's assistant. Ask me about her experience, skills, projects, her CV, or how to get in touch."
   }
 ])
 
-const suggestions = ['Experience', 'Skills', 'Projects', 'Contact']
+const suggestions = ['Experience', 'Skills', 'Projects', 'Contact', 'CV']
 
 const knowledgeBase = [
   {
@@ -45,6 +45,10 @@ const knowledgeBase = [
     response: "Jessica is based in Pampanga, Philippines (UTC+8) and is open to remote and on-site opportunities."
   },
   {
+    keywords: ['cv', 'resume', 'download'],
+    response: "You can download Jessica's CV using the \"Download CV\" button at the top of the page, right next to \"View Projects\" and \"Get in Touch.\""
+  },
+  {
     keywords: ['digiplus'],
     response:
       "At DigiPlus Interactive Corp., Jessica works on their iGaming platform (AP) — delivering frontend enhancements, the Loyalty Module, a third-party sportsbook API integration, the Community v2 social module, and the new AP Retail App built with Vue 3 and TypeScript."
@@ -57,7 +61,7 @@ const knowledgeBase = [
   {
     keywords: ['who are you', 'what are you', 'bot', 'chatbot'],
     response:
-      "I'm a simple FAQ assistant built into this portfolio — I can answer common questions about Jessica's experience, skills, projects, and how to contact her."
+      "I'm a simple FAQ assistant built into this portfolio — I can answer common questions about Jessica's experience, skills, projects, her CV, and how to contact her."
   },
   {
     keywords: ['hi', 'hello', 'hey'],
@@ -74,7 +78,7 @@ function findResponse(text) {
   const match = knowledgeBase.find(entry => entry.keywords.some(keyword => normalized.includes(keyword)))
   return match
     ? match.response
-    : "I don't have a specific answer for that, but you can ask about Jessica's experience, skills, projects, or contact details — or reach her directly through the Contact section below."
+    : "I don't have a specific answer for that, but you can ask about Jessica's experience, skills, projects, her CV, or contact details — or reach her directly through the Contact section below."
 }
 
 async function scrollToBottom() {
