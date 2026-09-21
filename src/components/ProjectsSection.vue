@@ -80,13 +80,14 @@ const { target, isVisible } = useAnimateOnScroll()
           class="project-card"
           @mousemove="tiltCard"
           @mouseleave="resetTilt"
+          @click="toggleProject(project.title)"
         >
           <button
             v-if="project.images"
             type="button"
             class="project-thumb"
             :aria-label="`View ${project.title} case study screenshots`"
-            @click="openCaseStudy(project)"
+            @click.stop="openCaseStudy(project)"
           >
             <img :src="project.images[0]" :alt="`${project.title} screenshot`" loading="lazy" />
             <span class="project-thumb-badge">🔍 View case study</span>
@@ -103,7 +104,7 @@ const { target, isVisible } = useAnimateOnScroll()
             class="project-details-toggle"
             type="button"
             :aria-expanded="expandedProject === project.title"
-            @click="toggleProject(project.title)"
+            @click.stop="toggleProject(project.title)"
           >
             {{ expandedProject === project.title ? 'Hide contribution' : 'View contribution' }}
             <span aria-hidden="true">{{ expandedProject === project.title ? '−' : '+' }}</span>

@@ -77,6 +77,7 @@ onMounted(() => {
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary" @click.prevent="scrollToSection('projects')">View Projects</a>
         <a href="#contact" class="btn btn-outline" @click.prevent="scrollToSection('contact')">Get in Touch</a>
+        <a href="/Jessica-Gomez-CV.pdf" class="btn btn-outline" download>Download CV</a>
       </div>
       <dl class="hero-stats" aria-label="Career highlights">
         <div v-for="(stat, i) in stats" :key="stat.label">
