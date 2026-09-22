@@ -15,7 +15,10 @@ export function useAnimateOnScroll({ immediate = false } = {}) {
     observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) isVisible.value = true
+          if (entry.isIntersecting) {
+            isVisible.value = true
+            observer.disconnect()
+          }
         })
       },
       { threshold: 0.01, rootMargin: '0px 0px -50px 0px' }

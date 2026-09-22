@@ -67,7 +67,7 @@ onBeforeUnmount(() => {
           </div>
         </div>
         <div class="project-modal-body">
-          <span class="project-industry project-modal-industry">{{ project.industry }}</span>
+          <span class="project-industry project-modal-industry">{{ project.industries.join(' / ') }}</span>
           <h3>{{ project.title }}</h3>
           <p class="project-company">{{ project.company }}</p>
           <p>{{ project.description }}</p>

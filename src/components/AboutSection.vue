@@ -34,7 +34,7 @@ const { target, isVisible } = useAnimateOnScroll()
         </p>
       </div>
       <div class="about-visual">
-        <DeveloperScene :stack="developerData.stack" />
+        <DeveloperScene v-if="isVisible" :stack="developerData.stack" />
       </div>
     </div>
   </section>
